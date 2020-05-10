@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-export interface Car { 
-  colour: string;
-  brand: string;
-  doors: number;
- }
+import { Car } from '../car.model';
 
 @Component({
   selector: 'app-cars',

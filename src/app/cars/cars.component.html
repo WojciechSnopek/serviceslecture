@@ -1,8 +1,3 @@
 <div *ngFor="let car of cars">
-    <ul class="borderTwoColour">
-        <li>Colour: {{ car.colour }}</li>
-        <li>Brand: {{ car.brand }}</li>
-        <li>Doors: {{ car.doors }}</li>
-    </ul>
-    <br>
+    <app-car [car]="car"></app-car>
 </div>
