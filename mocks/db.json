@@ -1,0 +1,17 @@
+{
+    "Cars": [{
+        "Colour": "Red",
+        "Brand": "Mazda",
+        "Doors": 5
+    },
+    {
+        "Colour": "Black",
+        "Brand": "Fiesta",
+        "Doors": 3
+    },
+    {
+        "Colour": "Violet",
+        "Brand": "BMW",
+        "Doors": 3
+    }]
+}
