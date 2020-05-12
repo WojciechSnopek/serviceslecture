@@ -1,17 +1,24 @@
 {
-    "Cars": [{
-        "Colour": "Red",
-        "Brand": "Mazda",
-        "Doors": 5
+  "cars": [
+    {
+      "colour": "Red",
+      "brand": "Mazda",
+      "doors": 5
     },
     {
-        "Colour": "Black",
-        "Brand": "Fiesta",
-        "Doors": 3
+      "colour": "Black",
+      "brand": "Fiesta",
+      "doors": 3
     },
     {
-        "Colour": "Violet",
-        "Brand": "BMW",
-        "Doors": 3
-    }]
+      "colour": "Violet",
+      "brand": "BMW",
+      "doors": 3
+    },
+    {
+      "colour": "Twoja Stara",
+      "brand": "Hiundaj",
+      "doors": 7
+    }
+  ]
 }

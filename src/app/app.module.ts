@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -7,16 +8,9 @@ import { CarsComponent } from './cars/cars.component';
 import { CarComponent } from './car/car.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CarsComponent,
-    CarComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, CarsComponent, CarComponent],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
