@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Car } from '../car.model';
 import { ApiCarsService } from '../core/services/api-cars.service';
+import { tap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-cars',
@@ -12,11 +13,22 @@ export class CarsComponent implements OnInit {
 
   constructor(private readonly carsService: ApiCarsService) {}
 
-  ngOnInit(): void {
-    this.carsService.getCars().subscribe((x) => {
-      console.log(x);
-      this.cars = x;
-      console.log(this.cars);
+  public refreshValuesAfterDelete() {
+    this.carsService.getCars().subscribe((car) => {
+      this.cars = car;
     });
+  }
+
+  ngOnInit(): void {
+    this.carsService
+      .getCars()
+      .pipe(
+        tap((cars) => {
+          console.log(cars);
+        })
+      )
+      .subscribe((car) => {
+        this.cars = car;
+      });
   }
 }

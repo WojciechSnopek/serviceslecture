@@ -8,6 +8,10 @@
   animation-timing-function: step-end;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  width: 49%;
+  margin-top: 10px;
+  margin-left: 15px;
+  float: left;
 }
 
 .outlineSecondColour {
@@ -18,6 +22,14 @@
   animation-timing-function: step-end;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  width: 49%;
+  margin-top: 10px;
+  float: left;
+}
+
+li {
+  width: 49%;
+  font-size: 1.5em;
 }
 
 @keyframes blink {
@@ -30,4 +42,29 @@
   50% {
     outline-color: rgb(8, 8, 202);
   }
+}
+
+.deleteButton {
+  float: inline-start;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.button {
+  border-radius: 2em;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-weight: 500;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: rgb(165, 9, 9);
+  color: rgb(255, 255, 255);
+  border: rgb(219, 85, 85);
+  cursor: pointer;
+  font-size: 1.5em;
+  border-width: medium;
 }

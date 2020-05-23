@@ -1,8 +1,13 @@
 <div *ngIf="car">
-    <ul class="borderFirstColour outlineSecondColour">
-        <li>Colour: {{ car.colour }}</li>
-        <li>Brand: {{ car.brand }}</li>
-        <li>Doors: {{ car.doors }}</li>
-    </ul>
-    <br>
-</div>  
+  <ul class="borderFirstColour outlineSecondColour">
+    <li>Colour: {{ car.colour }}</li>
+    <li>Brand: {{ car.brand }}</li>
+    <li>Doors: {{ car.doors }}</li>
+  </ul>
+  <br />
+  <div class="deleteButton">
+    <button class="button" type="button" (click)="delete(car.id)">
+      Wykurwiaj ze stronki
+    </button>
+  </div>
+</div>

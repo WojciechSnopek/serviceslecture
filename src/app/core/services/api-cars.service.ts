@@ -12,4 +12,8 @@ export class ApiCarsService {
   public getCars(): Observable<Array<Car>> {
     return this.httpClient.get<Array<Car>>('http://localhost:3000/cars');
   }
+
+  public deleteCar(id: number): Observable<void> {
+    return this.httpClient.delete<void>(`http://localhost:3000/cars/${id}`);
+  }
 }
