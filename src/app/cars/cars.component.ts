@@ -1,7 +1,8 @@
+import { CarsService } from './../core/services/cars.service';
 import { Component, OnInit } from '@angular/core';
 import { Car } from '../car.model';
-import { ApiCarsService } from '../core/services/api-cars.service';
 import { tap } from 'rxjs/operators';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-cars',
@@ -9,26 +10,16 @@ import { tap } from 'rxjs/operators';
   styleUrls: ['./cars.component.scss'],
 })
 export class CarsComponent implements OnInit {
-  public cars: Array<Car>;
+  public cars$: Observable<Array<Car>>; //strumien
 
-  constructor(private readonly carsService: ApiCarsService) {}
+  constructor(private readonly carsService: CarsService) {}
 
   public refreshValuesAfterDelete() {
-    this.carsService.getCars().subscribe((car) => {
-      this.cars = car;
-    });
+    this.carsService.getCars();
   }
 
   ngOnInit(): void {
-    this.carsService
-      .getCars()
-      .pipe(
-        tap((cars) => {
-          console.log(cars);
-        })
-      )
-      .subscribe((car) => {
-        this.cars = car;
-      });
+    this.cars$ = this.carsService.cars$;
+    this.refreshValuesAfterDelete();
   }
 }

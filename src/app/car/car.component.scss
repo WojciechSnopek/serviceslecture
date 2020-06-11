@@ -1,70 +1,104 @@
-.borderFirstColour {
-  border: 5px solid rgb(165, 30, 30);
-  margin: auto;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  animation-name: blink;
-  animation-duration: 2s;
-  animation-timing-function: step-end;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  width: 49%;
-  margin-top: 10px;
-  margin-left: 15px;
-  float: left;
+// .borderFirstColour {
+//   border: 5px solid rgb(165, 30, 30);
+//   margin: auto;
+//   padding-top: 1em;
+//   padding-bottom: 1em;
+//   animation-name: blink;
+//   animation-duration: 2s;
+//   animation-timing-function: step-end;
+//   animation-iteration-count: infinite;
+//   animation-direction: alternate;
+//   width: 49%;
+//   margin-top: 10px;
+//   margin-left: 15px;
+//   float: left;
+// }
+
+// .outlineSecondColour {
+//   outline: 5px solid rgb(64, 64, 64);
+//   animation-name: blink_2;
+//   animation-duration: 2s;
+//   animation-delay: 1s;
+//   animation-timing-function: step-end;
+//   animation-iteration-count: infinite;
+//   animation-direction: alternate;
+//   width: 49%;
+//   margin-top: 10px;
+//   float: left;
+// }
+
+// li {
+//   width: 49%;
+//   font-size: 1.5em;
+// }
+
+// @keyframes blink {
+//   50% {
+//     border-color: rgb(177, 26, 15);
+//   }
+// }
+
+// @keyframes blink_2 {
+//   50% {
+//     outline-color: rgb(8, 8, 202);
+//   }
+// }
+
+// .deleteButton {
+//   float: inline-start;
+//   margin-top: 10px;
+//   margin-left: 10px;
+//   margin-bottom: 10px;
+//   float: left;
+// }
+
+// .button {
+//   border-radius: 2em;
+//   padding-left: 10px;
+//   padding-right: 10px;
+//   padding-top: 7px;
+//   padding-bottom: 7px;
+//   font-weight: 500;
+//   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+//     "Lucida Sans", Arial, sans-serif;
+//   background-color: rgb(165, 9, 9);
+//   color: rgb(255, 255, 255);
+//   border: rgb(219, 85, 85);
+//   cursor: pointer;
+//   font-size: 1.5em;
+//   border-width: medium;
+// }
+.main {
+  background-color: #121154;
+  width: 33%;
+  border-radius: 10px;
 }
 
-.outlineSecondColour {
-  outline: 5px solid rgb(64, 64, 64);
-  animation-name: blink_2;
-  animation-duration: 2s;
-  animation-delay: 1s;
-  animation-timing-function: step-end;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  width: 49%;
-  margin-top: 10px;
-  float: left;
-}
-
-li {
-  width: 49%;
-  font-size: 1.5em;
-}
-
-@keyframes blink {
-  50% {
-    border-color: rgb(177, 26, 15);
-  }
-}
-
-@keyframes blink_2 {
-  50% {
-    outline-color: rgb(8, 8, 202);
-  }
+.wykurwiator {
+  background-color: #0d0739;
+  color: white;
+  margin-bottom: 0%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border-radius: 10px;
 }
 
 .deleteButton {
-  float: inline-start;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  float: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+li {
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 .button {
-  border-radius: 2em;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  font-weight: 500;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  background-color: rgb(165, 9, 9);
-  color: rgb(255, 255, 255);
-  border: rgb(219, 85, 85);
+  color: white;
+  background-color: rgb(216, 45, 45);
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+  border-color: whitesmoke;
   cursor: pointer;
-  font-size: 1.5em;
-  border-width: medium;
 }

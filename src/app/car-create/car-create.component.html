@@ -1,6 +1,19 @@
 <form [formGroup]="carForm" (submit)="save()">
-  <input type="text" formControlName="colour" />
-  <input type="text" formControlName="brand" />
-  <input type="text" formControlName="doors" />
-  <button type="submit">Zaakceptuj</button>
+  <div class="formBorder">
+    <div class="divvo">
+      <label for="colour">Colour: </label>
+      <input type="text" id="coulour" formControlName="colour" />
+    </div>
+    <div class="divvo">
+      <label for="brand">Brand: </label>
+      <input type="text" id="brand" formControlName="brand" />
+    </div>
+    <div class="divvo">
+      <label for="doors">Doors number: </label>
+      <input type="text" id="doors" formControlName="doors" />
+    </div>
+    <div class="divvo">
+      <button type="submit" class="buttonForm">Dodaj samochód</button>
+    </div>
+  </div>
 </form>

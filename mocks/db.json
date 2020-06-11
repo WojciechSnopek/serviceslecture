@@ -1,40 +1,28 @@
 {
   "cars": [
     {
-      "id": 1,
-      "colour": "Red",
-      "brand": "Mazda",
-      "doors": 5464
+      "colour": "twoja stara",
+      "brand": "zapierdala",
+      "doors": "nanana",
+      "id": 19
     },
     {
-      "id": 2,
-      "colour": "Red",
-      "brand": "Mazda",
-      "doors": 44562352
+      "colour": "twoja stara",
+      "brand": "zapierdala",
+      "doors": "nanana",
+      "id": 21
     },
     {
-      "id": 3,
-      "colour": "Red",
-      "brand": "Mazda",
-      "doors": 54637664
+      "colour": "twoja stara",
+      "brand": "fdsvs",
+      "doors": "100",
+      "id": 22
     },
     {
-      "id": 4,
-      "colour": "Red",
-      "brand": "Mazda",
-      "doors": 356543664
-    },
-    {
-      "id": 5,
-      "colour": "Red",
-      "brand": "Mazda",
-      "doors": 53673464
-    },
-    {
-      "id": 6,
-      "colour": "Red",
-      "brand": "Mazda",
-      "doors": 5463765764
+      "colour": "twoja mama",
+      "brand": "Ewa",
+      "doors": "Jest Kochana",
+      "id": 35
     }
   ]
 }

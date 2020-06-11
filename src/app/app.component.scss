@@ -1,0 +1,12 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-grow: 1;
+  border: solid #000000 3px;
+  background-color: #121154;
+  font-size: 3em;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
